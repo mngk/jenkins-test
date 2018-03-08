@@ -1,0 +1,11 @@
+---
+- hosts: all
+  vars:
+    ONE: "{{one}}"
+    TWO: "{{two}}"
+  tasks:
+    - debug:
+        msg: "{{ONE}}"
+        
+    - debug:
+        msg: "{{TWO}}"
